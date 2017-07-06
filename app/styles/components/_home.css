@@ -1,0 +1,19 @@
+$wrapper-padding: 16px;
+
+.wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	height: 100%;
+	padding: 10px;
+    background: #eaeaea;
+}
+
+#app {
+	height: 100%;
+}
+
+.text-section {
+ font-weight: bold;
+ font-style: normal;
+}

@@ -1,0 +1,88 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $nav-height;
+  box-shadow: 0 0 2px rgba(0,0,0,.5);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  background-color: #adadad;
+  z-index: 1;
+}
+
+.nav__wrapper {
+  max-width: $max-width;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav__logo-wrapper {
+  text-decoration: none;
+}
+
+.nav__logo {
+  font-size: 1em;
+  margin: 0;
+  user-select: none;
+  color: $text-color;
+  text-decoration: none;
+  display: none;
+}
+
+.btn--nav {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background: #503333;
+  color: #ffffff;
+}
+
+.btn--nav + .btn--nav {
+  margin-left: 1em;
+}
+
+.btn--dash{
+    display: none;
+}
+
+.menuLinks,.menuLinks li{
+    text-decoration: underline;
+    color:blueviolet;
+    line-height: 3;
+    cursor: pointer;
+    list-style: none outside none;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.menuLinks li a{
+   color: #284c5d;
+}
+.fontTItle{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #632727;
+}
+.contactform{
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .nav__wrapper {
+    justify-content: none;
+  }
+
+  .nav__logo-wrapper {
+    margin: 0 auto;
+  }
+
+  .btn--nav {
+    display: none;
+  }
+}
